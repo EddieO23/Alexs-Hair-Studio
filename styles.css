@@ -1,11 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
+:root {
+    --jordy-blue: #91c4f2ff;
+    --vista-blue:  #8ca0d7ff;
+    --african-violet: #9d79bcff;
+    --purpureus-: #a14da0ff;
+    --mardi-gras: #7e1f86ff;
+}
+
 * {
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252a;
+    background-color: var(--mardi-gras);
 }
+// header/top section 
 
 li, a, button {
     font-family: "Montserrat";
@@ -43,16 +53,17 @@ header {
 
 .nav-links li a {
     transition: all 0.3s ease 0s;
+    color: #fff;
 }
 
 .nav-links li a:hover {
-    color: #0088a9;
+    color: var(--vista-blue)
 }
 
 button {
     margin-left: 20px;
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
+    background-color: var(--vista-blue);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -60,5 +71,6 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    background-color: var(--jordy-blue);
+    opacity: .6;
 }
